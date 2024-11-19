@@ -1,0 +1,138 @@
+button {
+    padding: 18px 55px;
+    font-size: 15px;    
+    font-weight: bold;
+    color: #fee2e2;
+    border: 0;
+    border-radius: 11px;
+    filter: drop-shadow(0 0 4px #9F73AB); */
+    box-shadow: inset 0 0 10px 1px #7743db, 0 0 10px 5px #7743db;
+    transition: all 0.5s;
+  border-radius: 11px;
+  background: linear-gradient(80deg, #ffcbf2, #ec38bc, #7303c0, #03001e);
+  cursor: pointer;
+  }
+  
+  button::after {
+    content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  background: linear-gradient(80deg, #ffcbf2, #ec38bc, #7303c0, #03001e);
+  filter: blur(20px);
+  opacity: 0;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    left: -20px;
+    border: 5px solid #6d67e4;
+    border-width: 0 12px 8px 4px;
+    border-radius: 100%;
+    filter: drop-shadow(0px 0px 6px rgba(109, 103, 228, 1));
+    transform: rotate(-30deg);
+    transition: all 0.5s;
+    animation: LinerBefore 15s ease infinite;
+  }
+  .button:hover {
+    transform: scale(1.1);
+    transition: all 0.6s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+  .button:hover:after {
+    transition: all 0.6s cubic-bezier(0.15, 0.83, 0.66, 1);
+    opacity: 0.6;
+  }
+  button span {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  button#space-btn div.star {
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 2s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+  }
+  button#space-btn div.shooting-star {
+    width: 80px;
+    height: 1px;
+    position: absolute;
+    background: linear-gradient(80deg, #ffffffff, #ffffff00);
+    border-radius: 50%;
+    transform: rotate(-40deg);
+    opacity: 0
+  }
+  button#space-btn div.shooting-star-1 {
+  animation: fallingStar1 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+}
+
+button#space-btn div.shooting-star-2 {
+  animation: fallingStar2 2s 10s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+}
+
+button#space-btn div.shooting-star-3 {
+  animation: fallingStar3 8s 20s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+}
+
+button#space-btn div.shooting-star-4 {
+  animation: fallingStar4 4s 6s cubic-bezier(0.15, 0.83, 0.66, 1) infinite;
+}
+  
+  @keyframes GradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes LinerAfter {
+    0% {
+      left: -27px;
+      height: 54px;
+    }
+  
+    50% {
+      left: -7px;
+      height: 37px;
+    }
+  
+    100% {
+      left: -27px;
+      height: 54px;
+    }
+  }
+  
+  @keyframes LinerBefore {
+    0% {
+      left: -30px;
+      height: 50px;
+    }
+  
+    50% {
+      left: -10px;
+      height: 33px;
+    }
+  
+    100% {
+      left: -30px;
+      height: 50px;
+    }
+  }
+  button{
+    margin-top: 300px;
+    margin-left: 500px;
+  }
